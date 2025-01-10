@@ -14,3 +14,4 @@ def test_create_token(api_request_context: APIRequestContext):
     responce_json = response.json()
     expected_schema = load_schema("auto_test/json/create_token.json")
     jsonschema.validate(responce_json, expected_schema)
+    

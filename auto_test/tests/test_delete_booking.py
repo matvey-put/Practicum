@@ -29,3 +29,4 @@ def test_delete_booking(api_request_context):
      
     response_delete = restful_booker_api.delete_booking(id, token)
     expect(response_delete).to_be_ok()
+    
